@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y \
     vim \
     && rm -rf /var/lib/apt/lists/*
 
+RUN update-ca-certificates
+
 # 下载并安装 1Panel（请始终从官网获取最新安装命令）
 RUN curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
     
