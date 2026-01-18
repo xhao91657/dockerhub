@@ -7,6 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # 安装必要工具和依赖
 RUN apt-get update && apt-get install -y \
     curl \
+    wget \
     sudo \
     systemctl \
     vim \
