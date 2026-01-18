@@ -1,5 +1,5 @@
 # 使用官方 Ubuntu 基础镜像
-FROM ubuntu:latest
+FROM jockerdragon/docker-systemd:ubuntu-22.04
 
 # 避免安装过程中交互式提示
 ENV DEBIAN_FRONTEND=noninteractive
