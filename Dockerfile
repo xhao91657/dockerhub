@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # 下载并安装 1Panel（请始终从官网获取最新安装命令）
-RUN bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"
+RUN wget https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh
+RUN bash quick_start.sh
     
 # 设置容器启动命令
 CMD ["bash"]
